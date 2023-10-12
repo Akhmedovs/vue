@@ -1,0 +1,8 @@
+@mixin responsive($breakpoint) {
+    @if $breakpoint == table {
+        @media only screen and (max-width: 768px) { @content }
+    };
+    @if $breakpoint == litle-phone {
+        @media only screen and (max-width: 380px) { @content }
+    }
+}
